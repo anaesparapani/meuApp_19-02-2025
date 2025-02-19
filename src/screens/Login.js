@@ -12,7 +12,7 @@ export default function Login() {
     await api.postLogin(user).then(
         (response)=>{
             console.log(response.data.message)
-            alert(response.data.message)
+            Alert.alert(response.data.message)
         },(error)=>{
             console.log(error)
         }
